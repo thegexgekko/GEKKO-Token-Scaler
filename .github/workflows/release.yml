@@ -35,7 +35,7 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p dist/gekko-token-scaler/scripts dist/gekko-token-scaler/styles
-          cp module.json README.md LICENSE dist/gekko-token-scaler/
+          cp module.json README.md dist/gekko-token-scaler/
           cp scripts/*.mjs dist/gekko-token-scaler/scripts/
           cp styles/*.css dist/gekko-token-scaler/styles/
           (cd dist && zip -q -r ../gekko-token-scaler.zip gekko-token-scaler)
@@ -55,4 +55,13 @@ jobs:
               --title "GEKKO Token Scaler $TAG" \
               --notes "Version $TAG du module Foundry VTT V14. Installer via l'URL de manifeste indiquee dans le README." \
               --latest
+          fi
+
+      - name: Retirer l'ancienne publication erronee
+        if: ${{ steps.version.outputs.tag == 'v0.1.7' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view v0.1.6 >/dev/null 2>&1; then
+            gh release delete v0.1.6 --yes --cleanup-tag
           fi

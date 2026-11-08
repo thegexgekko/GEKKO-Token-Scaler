@@ -317,5 +317,5 @@ Hooks.on("renderApplicationV2", (app, html) => {
 Hooks.once("ready", () => {
   const mod = game.modules?.get(ID);
   if (mod) mod.api = { openSelected };
-  console.info(`${ID} | V0.1.6 chargée — Foundry V14`);
+  console.info(`${ID} | V0.1.7 chargée — Foundry V14`);
 });

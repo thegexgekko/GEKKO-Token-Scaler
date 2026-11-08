@@ -2,7 +2,7 @@
 
 Module **Foundry VTT V14** pour ajuster la hauteur visuelle des personnages selon leur taille réelle.
 
-**Version actuelle : 0.1.6** — prototype en français.
+**Version actuelle : 0.1.7** — prototype en français.
 
 ## Installation avec mises à jour Foundry
 
@@ -22,7 +22,7 @@ Le module ajuste les dimensions du token et conserve ses proportions. Le mode «
 
 **Compatibilité Visage** : une apparence Visage qui impose elle-même les dimensions ou l’échelle empêche le redimensionnement. Décocher les réglages de taille dans l’apparence Visage, en conservant l’image. Les explications sont disponibles dans l’aide des paramètres du module.
 
-## Limitations de la V0.1.6
+## Limitations de la V0.1.7
 
 - Module destiné aux MJ et tokens classiques (pas aux anneaux dynamiques).
 - Compatibilité avec Foundry V14 ; l’intégration avec Visage peut dépendre des réglages de chaque apparence.
@@ -34,4 +34,4 @@ Tests : `node --test tests/*.test.mjs`
 
 Les sources sont à la racine du dépôt. Le workflow GitHub Actions `.github/workflows/release.yml` construit automatiquement le ZIP `gekko-token-scaler.zip` et publie une **GitHub Release** portant le numéro de version du `module.json`. Pour publier une nouvelle version, modifier le champ `version` du manifeste, tester, puis pousser les modifications sur `main`.
 
-**Licence** : MIT © 2026 GEKKO.
+**Droits** : © 2026 GEKKO. Aucune licence de réutilisation ou de redistribution n'a été définie par l'auteur.

@@ -2,7 +2,7 @@
   "id": "gekko-token-scaler",
   "title": "GEKKO Token Scaler",
   "description": "Module Foundry VTT V14 pour adapter la taille des tokens à la taille réelle des personnages.",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "authors": [
     {
       "name": "GEKKO"
@@ -21,6 +21,5 @@
   "url": "https://github.com/thegexgekko/GEKKO-Token-Scaler",
   "manifest": "https://raw.githubusercontent.com/thegexgekko/GEKKO-Token-Scaler/main/module.json",
   "download": "https://github.com/thegexgekko/GEKKO-Token-Scaler/releases/latest/download/gekko-token-scaler.zip",
-  "license": "MIT",
   "readme": "README.md"
 }
